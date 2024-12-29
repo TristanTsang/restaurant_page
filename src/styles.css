@@ -1,14 +1,27 @@
 h1 {
   display: flex;
+  flex: 1;
   justify-content: center;
-  margin-bottom: 0px;
+  align-items: center;
+  margin: 0px;
   color: #3c0000;
+  text-shadow: -0.5px -0.5px 0 white, /* Top-left shadow */ 0.5px -0.5px 0 white,
+    /* Top-right shadow */ -0.5px 0.5px 0 white,
+    /* Bottom-left shadow */ 0.5px 0.5px 0 white; /* Bottom-right shadow */
+
+  font-size: 50px;
+  flex: 2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+
+  background-image: url(image.png);
 }
 
 h2 {
   color: #774936;
-  margin-top: 10px;
-  margin-bottom: 0px;
+  margin: 0px;
 }
 
 h3 {
@@ -24,17 +37,76 @@ button {
   padding: 10px 20px;
   border-radius: 2.5px;
 }
-
+nav {
+  height: 30px;
+}
 body {
+  margin: 0px;
+
   background-color: #ead7ae;
 }
 
 #content {
+  height: calc(100vh - 30px);
+  margin: 0px;
+  padding: 0px;
   display: flex;
-  padding: 0px 50px;
   flex-direction: column;
 }
 
 div {
   padding: 0px 20px;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  margin: 0px;
+  padding: 0px 10%;
+}
+#hours-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  flex: 2;
+  margin: 0px;
+
+  background-color: #774936;
+}
+h3 {
+  color: #2b5115;
+}
+#location-section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #3c0000;
+  flex: 1;
+  margin: 0px;
+  padding: 20px;
+}
+
+#menu-section {
+  display: grid;
+  column-gap: 10px;
+  text-align: center;
+  grid-template-rows: 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  flex: 5;
+  justify-content: center;
+}
+
+#store-section {
+  padding-top: 10px;
+  flex: 2.5;
+  background-color: #774936;
+}
+
+#staff-section {
+  padding-top: 10px;
+  flex: 2.5;
 }

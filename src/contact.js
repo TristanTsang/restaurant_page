@@ -1,6 +1,7 @@
 const div = document.querySelector("#content");
 function showContactPage() {
   div.innerHTML = "";
+
   const pageHeader = document.createElement("h1");
   pageHeader.innerText = "Contact Us!";
 
@@ -17,11 +18,19 @@ function showContactPage() {
   const store = document.createElement("div");
   store.innerText =
     "Store Phone Number: 555-5555-5558\nStore Email: 555-5555-5559";
+
+  const staffSection = document.createElement("div");
+  const storeSection = document.createElement("div");
+  staffSection.id = "staff-section";
+  storeSection.id = "store-section";
+  storeHeader.style.color = "#ead7ae";
   div.appendChild(pageHeader);
-  div.appendChild(staffHeader);
-  div.appendChild(staff);
-  div.appendChild(storeHeader);
-  div.appendChild(store);
+  staffSection.appendChild(staffHeader);
+  staffSection.appendChild(staff);
+  storeSection.appendChild(storeHeader);
+  storeSection.appendChild(store);
+  div.appendChild(staffSection);
+  div.appendChild(storeSection);
 }
 
 export { showContactPage };
