@@ -1,0 +1,40 @@
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0px;
+  color: #3c0000;
+}
+
+h2 {
+  color: #774936;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+button {
+  color: #2b5115;
+  background-color: transparent;
+  border: 0px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 2.5px;
+}
+
+body {
+  background-color: #ead7ae;
+}
+
+#content {
+  display: flex;
+  padding: 0px 50px;
+  flex-direction: column;
+}
+
+div {
+  padding: 0px 20px;
+}
